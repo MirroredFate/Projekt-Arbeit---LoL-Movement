@@ -83,13 +83,12 @@ public class PlayerController : MonoBehaviour
 
         if (navMeshAgent.remainingDistance <= attackDistance) // Greift an, wenn die Distanz, die der NavMeshAgent noch gehen muss kleiner ist, als die Angrifftsreichweite des Objekts.
         {
-
             transform.LookAt(targetedEnemy); //Schaut zum Gegner
             //Vector3 dirToShoot = targetedEnemy.transform.position - transform.position; //Setzt die Richtung wohin geschossen wird.
             if (Time.time > nextAttack)
             {
                 nextAttack = Time.time + attackRate;
-                Debug.Log("I am attacking the enemy!"); //Greift den Gegner an.
+                Debug.Log("Gegner wird angegriffen!"); //Greift den Gegner an.
             }
             navMeshAgent.isStopped = true;
             walking = false;
