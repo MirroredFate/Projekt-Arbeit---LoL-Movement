@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 69475952}
   - component: {fileID: 69475951}
   m_Layer: 0
-  m_Name: Gegner Tower Bot (outer)
+  m_Name: Enemy Tower Bot (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 112174628}
   - component: {fileID: 112174627}
   m_Layer: 0
-  m_Name: Spieler Tower Top (outer)
+  m_Name: Player Tower Top (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 229409564}
   - component: {fileID: 229409563}
   m_Layer: 0
-  m_Name: Gegner Tower Nexus (up)
+  m_Name: Enemy Tower Nexus (up)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 416605239}
   - component: {fileID: 416605238}
   m_Layer: 0
-  m_Name: Gegner Tower Top (outer)
+  m_Name: Enemy Tower Top (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 462494126}
   - component: {fileID: 462494125}
   m_Layer: 0
-  m_Name: Gegner Inhibitor Mid
+  m_Name: Enemy Inhibitor Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 483828134}
   - component: {fileID: 483828133}
   m_Layer: 0
-  m_Name: Gegner Tower Bot (inner)
+  m_Name: Enemy Tower Bot (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 488085425}
   - component: {fileID: 488085424}
   m_Layer: 0
-  m_Name: Spieler Tower Nexus (down)
+  m_Name: Player Tower Nexus (down)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 522138339}
   - component: {fileID: 522138338}
   m_Layer: 0
-  m_Name: Spieler Tower Top (inner)
+  m_Name: Player Tower Top (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 607050431}
   - component: {fileID: 607050430}
   m_Layer: 0
-  m_Name: Gegner Tower Top (inner)
+  m_Name: Enemy Tower Top (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 627296206}
   - component: {fileID: 627296205}
   m_Layer: 0
-  m_Name: Spieler Tower Bot (inner)
+  m_Name: Player Tower Bot (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 670161358}
   - component: {fileID: 670161357}
   m_Layer: 0
-  m_Name: Gegner Nexus
+  m_Name: Enemy Nexus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1116,7 +1116,7 @@ GameObject:
   - component: {fileID: 699604911}
   - component: {fileID: 699604910}
   m_Layer: 0
-  m_Name: Gegner Tower Mid (inhib)
+  m_Name: Enemy Tower Mid (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 740929548}
   - component: {fileID: 740929547}
   m_Layer: 0
-  m_Name: Spieler Inhibitor Mid
+  m_Name: Player Inhibitor Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 839361686}
   - component: {fileID: 839361685}
   m_Layer: 0
-  m_Name: Spieler Tower Top (inhib)
+  m_Name: Player Tower Top (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1366,7 +1366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 902553647}
   m_Layer: 0
-  m_Name: Spieler
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 966911661}
   - component: {fileID: 966911660}
   m_Layer: 0
-  m_Name: Spieler Inhibitor Bot
+  m_Name: Player Inhibitor Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1561,7 +1561,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984093396}
   m_LocalRotation: {x: 0.5768197, y: -0, z: -0, w: 0.8168715}
-  m_LocalPosition: {x: -6.9, y: 3.788, z: -7.935}
+  m_LocalPosition: {x: -9.75, y: 3.01, z: -10.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1587,7 +1587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021161833}
   m_Layer: 0
-  m_Name: Gegner
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1633,7 +1633,7 @@ GameObject:
   - component: {fileID: 1133340011}
   - component: {fileID: 1133340010}
   m_Layer: 0
-  m_Name: Spieler Tower Mid (outer)
+  m_Name: Player Tower Mid (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 1201194843}
   - component: {fileID: 1201194842}
   m_Layer: 0
-  m_Name: Spieler Nexus
+  m_Name: Player Nexus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 1311515242}
   - component: {fileID: 1311515241}
   m_Layer: 0
-  m_Name: Gegner Inhibitor Bot
+  m_Name: Enemy Inhibitor Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -1884,7 +1884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321598441}
   m_Layer: 0
-  m_Name: "Geb\xE4ude"
+  m_Name: Structures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 1325360066}
   - component: {fileID: 1325360065}
   m_Layer: 0
-  m_Name: Gegner Tower Mid (inner)
+  m_Name: Enemy Tower Mid (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 1459002948}
   - component: {fileID: 1459002947}
   m_Layer: 0
-  m_Name: Spieler Inhibitor Top
+  m_Name: Player Inhibitor Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2086,7 +2086,7 @@ GameObject:
   - component: {fileID: 1512085490}
   - component: {fileID: 1512085489}
   m_Layer: 0
-  m_Name: Gegner Tower Top (inhib)
+  m_Name: Enemy Tower Top (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2170,7 +2170,7 @@ GameObject:
   - component: {fileID: 1533109844}
   - component: {fileID: 1533109843}
   m_Layer: 0
-  m_Name: Gegner Tower Nexus (down)
+  m_Name: Enemy Tower Nexus (down)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2254,7 +2254,7 @@ GameObject:
   - component: {fileID: 1585898475}
   - component: {fileID: 1585898474}
   m_Layer: 0
-  m_Name: Spieler Tower Bot (outer)
+  m_Name: Player Tower Bot (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2409,7 +2409,7 @@ GameObject:
   - component: {fileID: 1712555734}
   - component: {fileID: 1712555733}
   m_Layer: 0
-  m_Name: Spieler Tower Bot (inhib)
+  m_Name: Player Tower Bot (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2493,7 +2493,7 @@ GameObject:
   - component: {fileID: 1774158926}
   - component: {fileID: 1774158925}
   m_Layer: 0
-  m_Name: Spieler Tower Mid (inhib)
+  m_Name: Player Tower Mid (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2577,7 +2577,7 @@ GameObject:
   - component: {fileID: 1899350803}
   - component: {fileID: 1899350802}
   m_Layer: 0
-  m_Name: Gegner Tower Mid (outer)
+  m_Name: Enemy Tower Mid (outer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2661,7 +2661,7 @@ GameObject:
   - component: {fileID: 2003991197}
   - component: {fileID: 2003991196}
   m_Layer: 0
-  m_Name: Gegner Tower Bot (inhib)
+  m_Name: Enemy Tower Bot (inhib)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2745,7 +2745,7 @@ GameObject:
   - component: {fileID: 2054199026}
   - component: {fileID: 2054199025}
   m_Layer: 0
-  m_Name: Spieler Tower Nexus (up)
+  m_Name: Player Tower Nexus (up)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 2059296472}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2846,7 +2846,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 0.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 125
@@ -2918,7 +2918,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2059296471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.09, y: 0.26, z: -9.38}
+  m_LocalPosition: {x: -9.79, y: 1.04, z: -9.74}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2949,7 +2949,7 @@ GameObject:
   - component: {fileID: 2084778315}
   - component: {fileID: 2084778314}
   m_Layer: 0
-  m_Name: Spieler Tower Mid (inner)
+  m_Name: Player Tower Mid (inner)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -3033,7 +3033,7 @@ GameObject:
   - component: {fileID: 2136152692}
   - component: {fileID: 2136152691}
   m_Layer: 0
-  m_Name: Gegner Inhibitor Top
+  m_Name: Enemy Inhibitor Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

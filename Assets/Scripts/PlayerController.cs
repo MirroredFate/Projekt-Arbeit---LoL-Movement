@@ -57,16 +57,7 @@ public class PlayerController : MonoBehaviour
             MoveAndAttack();
         }
 
-        //Für Animationen
-        /*if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-        {
-            if (!navMeshAgent.hasPath)
-                walking = false;
-        }
-        else
-        {
-            walking = true;
-        }*/
+        
     }
 
     //Bewegt Objekt zum Gegner und greift an wenn in Reichweite
