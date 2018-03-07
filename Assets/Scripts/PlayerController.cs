@@ -12,9 +12,6 @@ public class PlayerController : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
-    //Für mögliche Animationen (walking = bool im animator)
-    private bool walking;
-
     private bool enemyClicked;
     private Transform targetedEnemy;
     private float nextAttack;
@@ -41,7 +38,6 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    walking = true;
                     enemyClicked = false;
                     navMeshAgent.destination = hit.point; //Setzt das Ziel vom NavMeshAgent auf den Punkt, wo die Maus draufgeklickt hat.  
                     navMeshAgent.isStopped = false;
@@ -69,7 +65,6 @@ public class PlayerController : MonoBehaviour
         if (navMeshAgent.remainingDistance >= attackDistance) //Setzt walking auf true, wenn die Distanz, die der NavMeshAgent noch gehen muss größer ist als die Angriffsreichweite des Objekts.
         {
             navMeshAgent.isStopped = false;
-            walking = true;
         }
 
         if (navMeshAgent.remainingDistance <= attackDistance) // Greift an, wenn die Distanz, die der NavMeshAgent noch gehen muss kleiner ist, als die Angrifftsreichweite des Objekts.
@@ -82,7 +77,6 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Gegner wird angegriffen!"); //Greift den Gegner an.
             }
             navMeshAgent.isStopped = true;
-            walking = false;
         }
     }
 }
