@@ -13,8 +13,8 @@ public class CameraController : MonoBehaviour
 
     // Map Borders
     float topborder = 10;
-    float downborder = -10.5f;
-    float leftborder = -11;
+    float downborder = -12;
+    float leftborder = -11.5f;
     float rightborder = 10;
     bool lockedCamera = false;
 

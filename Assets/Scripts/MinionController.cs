@@ -98,7 +98,7 @@ public class MinionController : MonoBehaviour
             {
                 waypoint = playernexus;
                 navMeshAgent.destination = waypoint.position;
-                Debug.Log(waypoint.name);
+                //Debug.Log(waypoint.name);
             }
         }
 
