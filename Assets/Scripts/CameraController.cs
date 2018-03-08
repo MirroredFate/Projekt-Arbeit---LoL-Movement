@@ -45,52 +45,60 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            if (Input.mousePosition.x <= scrollPoint && transform.position.x > leftborder) // Kamera nach Links bewegen
+            // Kamera nach Links bewegen
+            if (Input.mousePosition.x <= scrollPoint && transform.position.x > leftborder) 
             {
                 xspeed = transform.position.x - 2 * Time.deltaTime;
                 transform.position = new Vector3(xspeed, transform.position.y, transform.position.z);
             }
 
-            if (Input.mousePosition.x >= Screen.width - scrollPoint && transform.position.x < rightborder) // Kamera nach Rechts bewegen
+            // Kamera nach Rechts bewegen
+            if (Input.mousePosition.x >= Screen.width - scrollPoint && transform.position.x < rightborder) 
             {
                 xspeed = transform.position.x + 2 * Time.deltaTime;
                 transform.position = new Vector3(xspeed, transform.position.y, transform.position.z);
             }
 
-            if (Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.z < topborder) // Kamera nach Oben bewegen 
+            // Kamera nach Oben bewegen
+            if (Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.z < topborder)  
             {
                 zspeed = transform.position.z + 2 * Time.deltaTime;
                 transform.position = new Vector3(transform.position.x, transform.position.y, zspeed);
             }
 
-            if (Input.mousePosition.y <= scrollPoint && transform.position.z > downborder) // Kamera nach Unten bewegen
+            // Kamera nach Unten bewegen
+            if (Input.mousePosition.y <= scrollPoint && transform.position.z > downborder) 
             {
                 zspeed = transform.position.z - 2 * Time.deltaTime;
                 transform.position = new Vector3(transform.position.x, transform.position.y, zspeed);
             }
 
-            if (Input.mousePosition.x <= 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x > leftborder && transform.position.z < topborder) // Kamera nach Links Oben bewegen
+            // Kamera nach Links Oben bewegen
+            if (Input.mousePosition.x <= 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x > leftborder && transform.position.z < topborder) 
             {
                 xspeed = transform.position.x - 2 * Time.deltaTime;
                 zspeed = transform.position.z + 2 * Time.deltaTime;
                 transform.position = new Vector3(xspeed, transform.position.y, zspeed);
             }
 
-            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x < rightborder && transform.position.z < topborder) // Kamera nach Rechts Oben bewegen
+            // Kamera nach Rechts Oben bewegen
+            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x < rightborder && transform.position.z < topborder) 
             {
                 xspeed = transform.position.x + 2 * Time.deltaTime;
                 zspeed = transform.position.z + 2 * Time.deltaTime;
                 transform.position = new Vector3(xspeed, transform.position.y, zspeed);
             }
 
-            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x > leftborder && transform.position.z > downborder) // Kamera nach Links Unten bewegen
+            // Kamera nach Links Unten bewegen
+            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x > leftborder && transform.position.z > downborder) 
             {
                 xspeed = transform.position.x - 2 * Time.deltaTime;
                 zspeed = transform.position.z - 2 * Time.deltaTime;
                 transform.position = new Vector3(xspeed, transform.position.y, zspeed);
             }
 
-            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x < rightborder && transform.position.z > downborder) // Kamera nach Rechts Unten bewegen
+            // Kamera nach Rechts Unten bewegen
+            if (Input.mousePosition.x >= Screen.width - 10 && Input.mousePosition.y >= Screen.height - scrollPoint && transform.position.x < rightborder && transform.position.z > downborder) 
             {
                 xspeed = transform.position.x + 2 * Time.deltaTime;
                 zspeed = transform.position.z - 2 * Time.deltaTime;
@@ -98,8 +106,8 @@ public class CameraController : MonoBehaviour
             }
         }
 
-
-        if (Input.mousePosition.x > scrollPoint && Input.mousePosition.x < Screen.width - scrollPoint && Input.mousePosition.y < Screen.height - scrollPoint && Input.mousePosition.y > scrollPoint) // Stoppt die Kamera wenn die Maus nicht am Rand ist
+        // Stoppt die Kamera wenn die Maus nicht am Rand ist
+        if (Input.mousePosition.x > scrollPoint && Input.mousePosition.x < Screen.width - scrollPoint && Input.mousePosition.y < Screen.height - scrollPoint && Input.mousePosition.y > scrollPoint) 
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }

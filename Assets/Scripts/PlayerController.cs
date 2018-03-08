@@ -10,11 +10,11 @@ public class PlayerController : MonoBehaviour
     public float attackRate = .5f;
 
 
-    private NavMeshAgent navMeshAgent;
+    NavMeshAgent navMeshAgent;
 
-    private bool enemyClicked;
-    private Transform targetedEnemy;
-    private float nextAttack;
+    bool enemyClicked;
+    Transform targetedEnemy;
+    float nextAttack;
 
     // Use this for initialization
     private void Awake()
@@ -31,15 +31,20 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(ray, out hit, 100))
             {
-                if (hit.collider.CompareTag("Enemy")) //Wurde ein objekt mit dem Tag "Enemy" angeklickt?
+                //Angreifen
+                //Wurde ein objekt mit dem Tag "Enemy" angeklickt?
+                if (hit.collider.CompareTag("Enemy")) 
                 {
-                    targetedEnemy = hit.transform; //Setzt den Transform Component von hit auf targeted Enemy
+                    //Setzt den Transform Component von hit auf targeted Enemy
+                    targetedEnemy = hit.transform; 
                     enemyClicked = true;
                 }
                 else
+                //Bewegen
                 {
                     enemyClicked = false;
-                    navMeshAgent.destination = hit.point; //Setzt das Ziel vom NavMeshAgent auf den Punkt, wo die Maus draufgeklickt hat.  
+                    //Setzt das Ziel vom NavMeshAgent auf den Punkt, wo die Maus draufgeklickt hat.
+                    navMeshAgent.destination = hit.point;   
                     navMeshAgent.isStopped = false;
                     Debug.Log("I'm moving.");
 
@@ -61,20 +66,24 @@ public class PlayerController : MonoBehaviour
     {
         if (targetedEnemy == null)
             return;
-        navMeshAgent.destination = targetedEnemy.position; //Setzt Ziel des NavMeshAgents auf die position des angewählten Gegners
-        if (navMeshAgent.remainingDistance >= attackDistance) //Setzt walking auf true, wenn die Distanz, die der NavMeshAgent noch gehen muss größer ist als die Angriffsreichweite des Objekts.
+        //Setzt Ziel des NavMeshAgents auf die position des angewählten Gegners
+        navMeshAgent.destination = targetedEnemy.position;
+        //Setzt walking auf true, wenn die Distanz, die der NavMeshAgent noch gehen muss größer ist als die Angriffsreichweite des Objekts.
+        if (navMeshAgent.remainingDistance >= attackDistance) 
         {
             navMeshAgent.isStopped = false;
         }
 
-        if (navMeshAgent.remainingDistance <= attackDistance) // Greift an, wenn die Distanz, die der NavMeshAgent noch gehen muss kleiner ist, als die Angrifftsreichweite des Objekts.
+        // Greift an, wenn die Distanz, die der NavMeshAgent noch gehen muss kleiner ist, als die Angrifftsreichweite des Objekts.
+        if (navMeshAgent.remainingDistance <= attackDistance) 
         {
             transform.LookAt(targetedEnemy); //Schaut zum Gegner
             //Vector3 dirToShoot = targetedEnemy.transform.position - transform.position; //Setzt die Richtung wohin geschossen wird.
             if (Time.time > nextAttack)
             {
                 nextAttack = Time.time + attackRate;
-                Debug.Log("Gegner wird angegriffen!"); //Greift den Gegner an.
+                //Greift den Gegner an.
+                Debug.Log("Gegner wird angegriffen!");
             }
             navMeshAgent.isStopped = true;
         }

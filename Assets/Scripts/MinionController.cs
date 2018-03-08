@@ -6,12 +6,15 @@ using UnityEngine.AI;
 public class MinionController : MonoBehaviour
 {
 
-    private NavMeshAgent navMeshAgent;
-    private Transform waypoint;
-    private Transform nexus;
-    private Transform playernexus;
-    private bool waypointclear = false;
-    private bool player;
+    NavMeshAgent navMeshAgent;
+    Transform waypoint;
+    Transform nexus;
+    Transform playernexus;
+    bool waypointclear = false;
+    bool player;
+
+
+
 
     private void Awake()
     {
@@ -21,12 +24,14 @@ public class MinionController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        #region Pathfinding Waypoints
         nexus = GameObject.Find("Enemy Nexus").transform;
         playernexus = GameObject.FindGameObjectWithTag("Player Nexus").transform;
 
         //Sucht die Waypoints 
-        if (transform.parent.name == "Player Inhibitor Top") // Wenn das Minion teil der Top Lane ist, wird Waypoint auf die Top Lane gesetzt.
+
+        // Wenn das Minion teil der Top Lane ist, wird Waypoint auf die Top Lane gesetzt.
+        if (transform.parent.name == "Player Inhibitor Top") 
         {
             player = true;
             waypoint = GameObject.Find("Top Waypoint").transform;
@@ -34,7 +39,8 @@ public class MinionController : MonoBehaviour
             Debug.Log("Player: " + player);
         }
 
-        if (transform.parent.name == "Player Inhibitor Mid" || transform.parent == null) // Wenn das Minion teil der Mid Lane ist oder keiner Lane angehört, wird Waypoint auf die Mid Lane gesetzt.
+        // Wenn das Minion teil der Mid Lane ist oder keiner Lane angehört, wird Waypoint auf die Mid Lane gesetzt.
+        if (transform.parent.name == "Player Inhibitor Mid" || transform.parent == null) 
         {
             player = true;
             waypoint = GameObject.Find("Mid Waypoint").transform;
@@ -42,7 +48,8 @@ public class MinionController : MonoBehaviour
             Debug.Log("Player" + player);
         }
 
-        if (transform.parent.name == "Player Inhibitor Bot") // Wenn das Minion teil der Bot Lane ist, wird Waypoint auf die Bot Lane gesetzt.
+        // Wenn das Minion teil der Bot Lane ist, wird Waypoint auf die Bot Lane gesetzt.
+        if (transform.parent.name == "Player Inhibitor Bot") 
         {
             player = true;
             waypoint = GameObject.Find("Bot Waypoint").transform;
@@ -50,7 +57,8 @@ public class MinionController : MonoBehaviour
             Debug.Log("Player " + player);
         }
 
-        if (transform.parent.name == "Enemy Inhibitor Top") // Wenn das Minion teil der Top Lane ist, wird Waypoint auf die Top Lane gesetzt.
+        // Wenn das Minion teil der Top Lane ist, wird Waypoint auf die Top Lane gesetzt.
+        if (transform.parent.name == "Enemy Inhibitor Top") 
         {
             player = false;
             waypoint = GameObject.Find("Top Waypoint").transform;
@@ -58,7 +66,8 @@ public class MinionController : MonoBehaviour
             Debug.Log("Enemy " + player);
         }
 
-        if (transform.parent.name == "Enemy Inhibitor Mid" || transform.parent == null) // Wenn das Minion teil der Mid Lane ist oder keiner Lane angehört, wird Waypoint auf die Mid Lane gesetzt.
+        // Wenn das Minion teil der Mid Lane ist oder keiner Lane angehört, wird Waypoint auf die Mid Lane gesetzt.
+        if (transform.parent.name == "Enemy Inhibitor Mid" || transform.parent == null) 
         {
             player = false;
             waypoint = GameObject.Find("Mid Waypoint").transform;
@@ -66,27 +75,32 @@ public class MinionController : MonoBehaviour
             Debug.Log("Enemy " + player);
         }
 
-        if (transform.parent.name == "Enemy Inhibitor Bot") // Wenn das Minion teil der Bot Lane ist, wird Waypoint auf die Bot Lane gesetzt.
+        // Wenn das Minion teil der Bot Lane ist, wird Waypoint auf die Bot Lane gesetzt.
+        if (transform.parent.name == "Enemy Inhibitor Bot") 
         {
             player = false;
             waypoint = GameObject.Find("Bot Waypoint").transform;
             navMeshAgent.destination = waypoint.position;
             Debug.Log("Enemy " + player);
         }
+        #endregion
 
     }
+
 
     // Update is called once per frame
     void Update()
     {
-
-        if (waypointclear == false) //Läuft solange zum Waypoint bis er diesen erreicht hat.
+        #region Pathfinding Update
+        //Läuft solange zum Waypoint bis er diesen erreicht hat.
+        if (waypointclear == false) 
         {
             //Debug.Log(waypoint.name);
             navMeshAgent.destination = waypoint.position;
 
         }
-        else if (waypointclear == true) // Wenn waypointclear true ist, läuft das Minion zum gegnerischen Nexus.
+        // Wenn waypointclear true ist, läuft das Minion zum gegnerischen Nexus.
+        else if (waypointclear == true) 
         {
             if (player == true)
             {
@@ -101,15 +115,22 @@ public class MinionController : MonoBehaviour
                 //Debug.Log(waypoint.name);
             }
         }
-
+        #endregion
 
     }
+
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Waypoint") // Wenn das Minion den Waypoint erreicht, wird "waypointclear" auf true gesetzt.  
+        // Wenn das Minion den Waypoint erreicht, wird "waypointclear" auf true gesetzt.
+        if (other.tag == "Waypoint")   
         {
             waypointclear = true;
         }
+
     }
+
+  
+
 }

@@ -98,7 +98,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.05
+    agentRadius: 0.2
     agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
@@ -113,6 +113,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 67d64bcd83f8178479720ba30ca591c2, type: 2}
+--- !u!1 &50250538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 50250541}
+  - component: {fileID: 50250540}
+  - component: {fileID: 50250539}
+  m_Layer: 5
+  m_Name: HowToText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &50250539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50250538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'How To:'
+--- !u!222 &50250540
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50250538}
+--- !u!224 &50250541
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50250538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1968112724}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &69475949
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,11 +271,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 69475949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &106068821 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1773789262}
 --- !u!1 &112174625
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,11 +355,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112174625}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &133906709 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1257859645}
 --- !u!1 &229409561
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +439,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229409561}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &321859719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 321859720}
+  m_Layer: 0
+  m_Name: MinionSpawnLocationTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &321859720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 321859719}
+  m_LocalRotation: {x: 0, y: 0.9238796, z: -0, w: -0.38268325}
+  m_LocalPosition: {x: -0.95, y: 0.634, z: 0.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136152690}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 225, z: 0}
+--- !u!1 &344119746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 344119747}
+  m_Layer: 0
+  m_Name: MinionSpawnLocationBot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344119747
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344119746}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
+  m_LocalPosition: {x: -1.1, y: 0.634, z: -0.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1311515240}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 135, z: 0}
 --- !u!1 &410612152
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +683,7 @@ GameObject:
   - component: {fileID: 462494127}
   - component: {fileID: 462494126}
   - component: {fileID: 462494125}
+  - component: {fileID: 462494128}
   m_Layer: 0
   m_Name: Enemy Inhibitor Mid
   m_TagString: Untagged
@@ -580,7 +701,7 @@ Transform:
   m_LocalPosition: {x: 6.944209, y: 11.71, z: 2.1095114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 106068821}
+  - {fileID: 1648925085}
   m_Father: {fileID: 1021161833}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 315, z: 0}
@@ -638,6 +759,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 462494123}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &462494128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462494123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55d1804b6e97b49a58a0ac9bf51ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionPrefab: {fileID: 1240725556456544, guid: 5a23d1cf79ab6324e993591235359eb5,
+    type: 2}
+  minionSpawnLocation: {fileID: 1648925085}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &483828131
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,11 +1069,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522138336}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &542064705 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1514894444}
 --- !u!1 &607050428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1445,7 @@ GameObject:
   - component: {fileID: 740929549}
   - component: {fileID: 740929548}
   - component: {fileID: 740929547}
+  - component: {fileID: 740929550}
   m_Layer: 0
   m_Name: Player Inhibitor Mid
   m_TagString: Untagged
@@ -1387,6 +1521,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740929545}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &740929550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740929545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55d1804b6e97b49a58a0ac9bf51ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionPrefab: {fileID: 1240725556456544, guid: 04482791a5e0e3b43bda40d9970f6890,
+    type: 2}
+  minionSpawnLocation: {fileID: 410612153}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &839361683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,6 +1766,9 @@ MonoBehaviour:
   minionPrefab: {fileID: 1240725556456544, guid: 04482791a5e0e3b43bda40d9970f6890,
     type: 2}
   minionSpawnLocation: {fileID: 2140730050}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &984093396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1905,80 @@ Transform:
   m_Father: {fileID: 1321598441}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1061060580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1061060581}
+  - component: {fileID: 1061060583}
+  - component: {fileID: 1061060582}
+  m_Layer: 5
+  m_Name: MinionSpawn Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1061060581
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061060580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1310345879}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1061060582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061060580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: " Friendly Minions:\n Enemy Minions:\n\n Next Wave: "
+--- !u!222 &1061060583
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061060580}
 --- !u!1 &1061803490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,7 +1990,7 @@ GameObject:
   - component: {fileID: 1061803493}
   - component: {fileID: 1061803492}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GameTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2051,68 +2279,75 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201194840}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1257859645
-Prefab:
+--- !u!1 &1310345878
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1311515240}
-    m_Modifications:
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.634
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240725556456544, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_Name
-      value: Enemy Minion (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 135
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1310345879}
+  - component: {fileID: 1310345882}
+  - component: {fileID: 1310345881}
+  m_Layer: 5
+  m_Name: StatsWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1310345879
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310345878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1061060581}
+  m_Father: {fileID: 1701937855}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 111, y: -42}
+  m_SizeDelta: {x: 234.4, y: 123.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1310345881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310345878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1310345882
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310345878}
 --- !u!1 &1311515239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2359,7 @@ GameObject:
   - component: {fileID: 1311515243}
   - component: {fileID: 1311515242}
   - component: {fileID: 1311515241}
+  - component: {fileID: 1311515244}
   m_Layer: 0
   m_Name: Enemy Inhibitor Bot
   m_TagString: Untagged
@@ -2141,7 +2377,7 @@ Transform:
   m_LocalPosition: {x: 9.004209, y: 11.71, z: 1.2295113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 133906709}
+  - {fileID: 344119747}
   m_Father: {fileID: 1021161833}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 315, z: 0}
@@ -2199,6 +2435,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311515239}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1311515244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1311515239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55d1804b6e97b49a58a0ac9bf51ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionPrefab: {fileID: 1240725556456544, guid: 5a23d1cf79ab6324e993591235359eb5,
+    type: 2}
+  minionSpawnLocation: {fileID: 344119747}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &1321598440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,6 +2692,7 @@ GameObject:
   - component: {fileID: 1459002949}
   - component: {fileID: 1459002948}
   - component: {fileID: 1459002947}
+  - component: {fileID: 1459002950}
   m_Layer: 0
   m_Name: Player Inhibitor Top
   m_TagString: Untagged
@@ -2514,6 +2768,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459002945}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1459002950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459002945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55d1804b6e97b49a58a0ac9bf51ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionPrefab: {fileID: 1240725556456544, guid: 04482791a5e0e3b43bda40d9970f6890,
+    type: 2}
+  minionSpawnLocation: {fileID: 657483333}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &1512085487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,56 +2869,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1512085487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1514894444
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2136152690}
-    m_Modifications:
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.634
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.9238796
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.38268325
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 225
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1533109841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +3078,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585898472}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1648925084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1648925085}
+  m_Layer: 0
+  m_Name: MinionSpawnLocationMid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648925085
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648925084}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -1.45, y: 0.634, z: 0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 462494124}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1681508983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +3208,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1424065213}
+  minionAmount: {fileID: 1061060582}
+  playerInhibitorTop: {fileID: 1459002945}
+  playerInhibitorMid: {fileID: 740929545}
+  playerInhibitorBot: {fileID: 966911658}
+  enemyInhibitorTop: {fileID: 2136152689}
+  enemyInhibitorMid: {fileID: 462494123}
+  enemyInhibitorBot: {fileID: 1311515239}
+  howTo: {fileID: 50250539}
 --- !u!114 &1701937852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3027,6 +3284,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1061803491}
+  - {fileID: 1310345879}
+  - {fileID: 1968112724}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3119,68 +3378,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712555731}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1773789262
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 462494124}
-    m_Modifications:
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.634
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240725556456544, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_Name
-      value: Enemy Minion (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4689517438653810, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a23d1cf79ab6324e993591235359eb5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1774158923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3546,75 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1899350800}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1968112723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1968112724}
+  - component: {fileID: 1968112726}
+  - component: {fileID: 1968112725}
+  m_Layer: 5
+  m_Name: HowToWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1968112724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968112723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 50250541}
+  m_Father: {fileID: 1701937855}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -178, y: 45.5}
+  m_SizeDelta: {x: 356, y: 91}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1968112725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968112723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1968112726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968112723}
 --- !u!1 &2003991194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,6 +3998,7 @@ GameObject:
   - component: {fileID: 2136152693}
   - component: {fileID: 2136152692}
   - component: {fileID: 2136152691}
+  - component: {fileID: 2136152694}
   m_Layer: 0
   m_Name: Enemy Inhibitor Top
   m_TagString: Untagged
@@ -3749,7 +4016,7 @@ Transform:
   m_LocalPosition: {x: 6.0442085, y: 11.71, z: 4.0695105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 542064705}
+  - {fileID: 321859720}
   m_Father: {fileID: 1021161833}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 315, z: 0}
@@ -3807,6 +4074,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2136152689}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2136152694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136152689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55d1804b6e97b49a58a0ac9bf51ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionPrefab: {fileID: 1240725556456544, guid: 5a23d1cf79ab6324e993591235359eb5,
+    type: 2}
+  minionSpawnLocation: {fileID: 321859720}
+  spawnTime: 30
+  minionPerWave: 5
+  spawnTimer: 0
 --- !u!1 &2140730049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,7 +4113,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2140730049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.397, y: 0.634, z: -0.059}
+  m_LocalPosition: {x: 1.61, y: 0.634, z: -0.059}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 966911659}
