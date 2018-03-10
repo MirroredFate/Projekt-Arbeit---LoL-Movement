@@ -65,8 +65,8 @@ public class UIController : MonoBehaviour {
 
         #region Minion Counter + Spawn Timer
 
-        amountFriendly = (playerInhibitorBot.transform.childCount + playerInhibitorMid.transform.childCount + playerInhibitorTop.transform.childCount - 3);
-        amountEnemy = (enemyInhibitorBot.transform.childCount + enemyInhibitorMid.transform.childCount + enemyInhibitorTop.transform.childCount - 3);
+        amountFriendly = (playerInhibitorBot.transform.childCount + playerInhibitorMid.transform.childCount + playerInhibitorTop.transform.childCount - 6);
+        amountEnemy = (enemyInhibitorBot.transform.childCount + enemyInhibitorMid.transform.childCount + enemyInhibitorTop.transform.childCount - 6);
 
         //Ausgabe
         minionAmount.text = "\n  Friendly Minions: " + amountFriendly + "\n  Enemy   Minions: " + amountEnemy + "\n\n  Next Wave in: " + Mathf.Round(minion.spawnTimer) + " sec";

@@ -31,13 +31,14 @@ public class CameraController : MonoBehaviour
     {
         //Debug.Log(Input.mousePosition);
 
+        //Setzt locked auf true oder false, je nachdem was es vor dem Drücken war. 
         if (Input.GetKeyDown(KeyCode.Z))
         {
             lockedCamera = !lockedCamera;
         }
 
       
-
+        //Wenn Leertaste gedrückt wird oder lockedCamera auf true ist, so wird die Kamera auf den Spieler fokussiert.  
         if (Input.GetKey(KeyCode.Space) || lockedCamera == true)
         {
             Vector3 jumpBack = Vector3.Lerp(transform.position, target.position, 10);

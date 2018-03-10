@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 114478742886445724}
   m_Layer: 0
   m_Name: Player Minion
-  m_TagString: Enemy
+  m_TagString: Player Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
@@ -197,6 +197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f466d84cce5904293167fc31f3f9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackRate: 0.5
+  attackDamage: 5
+  hp: 5
 --- !u!135 &135006096871771250
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -219,7 +222,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.49999997
   m_Speed: 0.75
-  m_Acceleration: 8
+  m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 125
   m_StoppingDistance: 0

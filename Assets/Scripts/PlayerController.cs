@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
             {
                 //Angreifen
                 //Wurde ein objekt mit dem Tag "Enemy" angeklickt?
-                if (hit.collider.CompareTag("Enemy")) 
+                if (hit.collider.CompareTag("Enemy Minion")) 
                 {
                     //Setzt den Transform Component von hit auf targeted Enemy
                     targetedEnemy = hit.transform; 
