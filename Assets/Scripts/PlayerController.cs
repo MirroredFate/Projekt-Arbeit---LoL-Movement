@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
 
     public float attackDistance = 1.5f;
     public float attackRate = .5f;
+    public int attackDamage = 2;
 
 
     NavMeshAgent navMeshAgent;
 
     bool enemyClicked;
     Transform targetedEnemy;
+    MinionController minion;
     float nextAttack;
 
     // Use this for initialization
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
             {
                 //Angreifen
                 //Wurde ein objekt mit dem Tag "Enemy" angeklickt?
-                if (hit.collider.CompareTag("Enemy")) 
+                if (hit.collider.CompareTag("Enemy Minion")) 
                 {
                     //Setzt den Transform Component von hit auf targeted Enemy
                     targetedEnemy = hit.transform; 
@@ -79,10 +81,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.LookAt(targetedEnemy); //Schaut zum Gegner
             //Vector3 dirToShoot = targetedEnemy.transform.position - transform.position; //Setzt die Richtung wohin geschossen wird.
+            minion = targetedEnemy.GetComponent<MinionController>();
             if (Time.time > nextAttack)
             {
                 nextAttack = Time.time + attackRate;
                 //Greift den Gegner an.
+                minion.hp -= attackDamage;
                 Debug.Log("Gegner wird angegriffen!");
             }
             navMeshAgent.isStopped = true;
